@@ -8,18 +8,31 @@
     <title>Karácsonyi Ajándék</title>
 </head>
 <body>
-    <div class="welcome-message">
-        <h1>Köszöntelek az angyalkereső játékban!</h1>
-        <p>Légy ügyes és fedezd fel az összes titkot!</p>
+    <div class="header">
+        <h1>Gratulálok, megtaláltál egy ajándékot!</h1>
     </div>
 
-    <button onclick="showPopup()">Tippek</button>
+    <a>
+        <img src="images/gift.gif" alt="Karácsonyi Ajándék" class="gift-icon" id="giftImage">
+    </a>
 
-    <div class="popup" id="popup">
-        <p>Szeretlek, de nem kapsz még segítséget😊</p>
-        <button onclick="closePopup()">Bezárás</button>
-    </div>
+    <script>
+        // Ha továbbra is szükséges a kattintásra irányítás, akkor hagyhatod az alábbi részt
+        document.querySelector('#giftImage').addEventListener('click', function() {
+            window.open('Gifts/1.pdf', '_blank');
+            
+        });
+    </script>
 
-    <script src="scripts/script.js"></script>
+<button onclick="showPopup()">Tippek</button>
+
+<div class="popup" id="popup">
+    <p>Szeretlek, de nem kapsz még segítséget😊</p>
+    <button onclick="closePopup()">Bezárás</button>
+</div>
+
+<script src="scripts/script.js"></script>
 </body>
 </html>
+
+
